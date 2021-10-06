@@ -10,5 +10,5 @@ def home(request):
 
 
 def detail(request, job_id):
-    job_detail = get_object_or_404(Job, pk=job_id)  # pk si primary key
+    job_detail = get_object_or_404(Job, pk=job_id)  # pk is primary key
     return render(request, 'jobs/detail.html', {'job': job_detail})
